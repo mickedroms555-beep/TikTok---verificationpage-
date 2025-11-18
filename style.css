@@ -8,7 +8,6 @@ body {
   flex-direction: column;
 }
 
-/* Header */
 .header {
   padding: 12px 16px;
   border-bottom: 1px solid #eee;
@@ -18,10 +17,9 @@ body {
   font-size: 17px;
   font-weight: 600;
 }
-.close { font-size: 28px; cursor: pointer; }
+.close, .help { font-size: 28px; cursor: pointer; }
 .help { font-size: 20px; }
 
-/* Main container */
 .container {
   flex: 1;
   padding: 20px 24px;
@@ -36,7 +34,6 @@ h1 {
   margin-bottom: 40px;
 }
 
-/* Tabs */
 .tabs {
   display: flex;
   margin-bottom: 30px;
@@ -52,9 +49,7 @@ h1 {
   position: relative;
   cursor: pointer;
 }
-.tab.active {
-  color: #000;
-}
+.tab.active { color: #000; }
 .tab.active::after {
   content: '';
   position: absolute;
@@ -65,7 +60,6 @@ h1 {
   background: #FF004F;
 }
 
-/* Inputs */
 .input-group {
   position: relative;
   margin-bottom: 24px;
@@ -78,10 +72,7 @@ input {
   font-size: 17px;
   background: transparent;
 }
-input:focus {
-  outline: none;
-  border-bottom-color: #FF004F;
-}
+input:focus { outline: none; border-bottom-color: #FF004F; }
 label {
   position: absolute;
   left: 0;
@@ -98,7 +89,17 @@ input:not(:placeholder-shown) ~ label {
   color: #666;
 }
 
-/* Links & Button */
+.password-group { position: relative; }
+.eye-icon {
+  position: absolute;
+  right: 0;
+  top: 18px;
+  font-size: 20px;
+  color: #999;
+  cursor: pointer;
+}
+.eye-icon:hover { color: #FF004F; }
+
 .forgot {
   display: block;
   text-align: center;
@@ -126,6 +127,16 @@ input:not(:placeholder-shown) ~ label {
   color: white;
   cursor: pointer;
 }
-#login-btn.active:hover {
-  background: #e00045;
+#login-btn.active:hover { background: #e00045; }
+
+.forgot-message { text-align: center; padding: 40px 20px; color: #666; }
+.return-btn {
+  margin-top: 30px;
+  padding: 12px 30px;
+  background: #FF004F;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
 }
